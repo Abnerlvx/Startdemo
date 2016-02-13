@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+     	android:id="@+id/tv_show"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"
+        android:height="70dip"
+        android:numeric="decimal"
+        android:scrollbars="none"
+        android:text="0"
+        android:textSize="30sp" >
+    </EditText>
+
+    <TableLayout
+        android:id="@+id/buttonArea"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" >
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="80sp"
+                android:layout_height="60sp"
+                android:background="@drawable/del"
+                android:text="C"
+                android:textColor="#FFFAF0"
+                android:onClick="onButtonClickHandler" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="85sp"
+                android:layout_height="75sp"
+                android:background="@drawable/seven"
+               	android:text="7"
+                android:textColor="#DB7093"
+                android:onClick="onButtonClickHandler" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="85sp"
+                android:layout_height="75sp"
+                android:background="@drawable/eight"
+                android:text="8"
+                android:textColor="#DB7093"
+                android:onClick="onButtonClickHandler" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="85sp"
+                android:layout_height="75sp"
+                                android:text="9"
+                android:textColor="#DB7093"
+                android:background="@drawable/nine"
+                android:onClick="onButtonClickHandler" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="85sp"
+                android:layout_height="fill_parent"
+                                android:text="+"
+                android:textColor="#DB7093"
+                android:background="@drawable/add"
+                android:onClick="onButtonClickHandler" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="85sp"
+                android:layout_height="75sp"
+                android:background="@drawable/four"
+                                android:text="4"
+                android:textColor="#DB7093"
+                android:gravity="center"
+                android:onClick="onButtonClickHandler" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="85sp"
+                android:layout_height="75sp"
+                android:background="@drawable/five"
+                                android:text="5"
+                android:textColor="#DB7093"
+                android:gravity="center"
+                android:onClick="onButtonClickHandler" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="85sp"
+                android:layout_height="75sp"
+                android:background="@drawable/six"
+                                android:text="6"
+                android:textColor="#DB7093"
+                android:gravity="center"
+                android:onClick="onButtonClickHandler" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn_sub"
+                android:layout_width="85sp"
+                android:layout_height="75sp"
+                android:background="@drawable/jian"
+                                android:text="-"
+                android:textColor="#DB7093"
+                android:gravity="center"
+                android:onClick="onButtonClickHandler" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="85sp"
+                android:layout_height="75sp"
+                android:background="@drawable/one"
+                                android:text="1"
+                android:textColor="#DB7093"
+                android:gravity="center"
+                android:onClick="onButtonClickHandler" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="85sp"
+                android:layout_height="75sp"
+                android:background="@drawable/two"
+                                android:text="2"
+                android:textColor="#DB7093"
+                android:gravity="center"
+                android:onClick="onButtonClickHandler" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="85sp"
+                android:layout_height="75sp"
+                android:background="@drawable/three"
+                                android:text="3"
+                android:textColor="#DB7093"
+                android:gravity="center"
+                android:onClick="onButtonClickHandler" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn_mul"
+                android:layout_width="85sp"
+                android:layout_height="75sp"
+                android:background="@drawable/cheng"
+                                android:text="*"
+                android:textColor="#DB7093"
+                android:gravity="center"
+                android:onClick="onButtonClickHandler" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="85sp"
+                android:layout_height="75sp"
+                android:background="@drawable/zero"
+                                android:text="0"
+                android:textColor="#DB7093"
+                android:gravity="center"
+                android:onClick="onButtonClickHandler" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn_point"
+                android:layout_width="95sp"
+                android:layout_height="75sp"
+                android:background="@drawable/point"
+                                android:text="."
+                android:textColor="#DB7093"
+                android:gravity="center"
+                android:onClick="onButtonClickHandler" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn_div"
+                android:layout_width="95sp"
+                android:layout_height="75sp"
+                android:background="@drawable/chu"
+                                android:text="/"
+                android:textColor="#DB7093"
+                android:gravity="center"
+                android:onClick="onButtonClickHandler" />
+
+            <Button
+                android:id="@+id/btn_equal"
+                android:layout_width="95sp"
+                android:layout_height="150sp"
+                android:background="@drawable/enter"
+                                android:text="="
+                android:textColor="#DB7093"
+                android:onClick="onButtonClickHandler" >
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
